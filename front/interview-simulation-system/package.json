@@ -1,0 +1,26 @@
+{
+  "name": "interview-simulation-system",
+  "version": "1.0.0",
+  "description": "面试模拟系统 - 一个实时的面试模拟平台",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build && cd ../server && npm run build"
+  },
+  "keywords": [
+    "interview",
+    "simulation",
+    "react",
+    "node",
+    "webrtc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "ts-node": "^10.9.2"
+  }
+}
